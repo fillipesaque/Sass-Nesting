@@ -1,0 +1,39 @@
+@charset "UTF-8";
+/* Nesting uma forma de declarar classes para editar seus elementos sem mts repetiçoes  */
+/* Modo normal */
+.container ul {
+  /* conteudo */
+}
+
+.container li {
+  /* conteudo */
+}
+
+.container button {
+  /* coonteudo */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.container ul {
+  background-color: rgb(231, 231, 74);
+  width: 600px;
+}
+.container li {
+  background-color: blueviolet;
+  padding: 10px 0px; /* 10px cima e baico 0px laterais */
+}
+.container button {
+  background-color: darkgray;
+  width: 80px;
+  cursor: pointer;
+}
+.container button:hover {
+  /* &:hover evitando repetiçoes com o nesting */
+  background-color: greenyellow;
+  transition: 0.5s;
+}
+
+/*# sourceMappingURL=index.css.map */

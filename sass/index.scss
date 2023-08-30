@@ -1,0 +1,36 @@
+/* Nesting uma forma de declarar classes para editar seus elementos sem mts repetiçoes  */
+
+/* Modo normal */
+.container ul {
+  /* conteudo */
+}
+.container li {
+  /* conteudo */
+}
+.container button {
+  /* coonteudo */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  ul {
+    background-color: rgb(231, 231, 74);
+    width: 600px;
+  }
+  li {
+    background-color: blueviolet;
+    padding: 10px 0px; /* 10px cima e baico 0px laterais */
+  }
+  button {
+    background-color: darkgray;
+    width: 80px;
+    cursor: pointer;
+
+    &:hover {
+      /* &:hover evitando repetiçoes com o nesting */
+      background-color: greenyellow;
+      transition: 0.5s;
+    }
+  }
+}
